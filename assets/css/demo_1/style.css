@@ -107,6 +107,15 @@
 /*-------------------------------------------------------------------*/
 /* === SCSS Compass Functions === */
 
+.day_given{
+  background: #7bed9f;
+  padding: 1px 1px;
+  border-radius: 20px;
+  font-size: 12px;
+  width: auto;
+  font-weight: 600;
+}
+
 @-webkit-keyframes flash {
   0% {
     opacity: 1; }
