@@ -44,12 +44,6 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="create_exam.html">
-              <i class="mdi mdi-book-open menu-icon"></i>
-              <span class="menu-title">Create Examination</span>
-            </a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="examination.html">
               <i class="mdi mdi-book-open-page-variant menu-icon"></i>
               <span class="menu-title">Examination Details</span>
@@ -98,24 +92,55 @@
             <div class="card">
               <div class="card-header">
                 <div class="card-title mb-0">
-                  <h4>Create Examination</h4>
+                  <div class="row">
+                    <div class="col-md-8">
+                      <h3><a href="examination.html"><i class="fa fa-chevron-circle-left mr-1 text-secondary" title="Back"></i></a>English Proficiency Examination</h3>
+                      <div class="text-secondary mt-2" style="font-weight:300; font-size: 15px;">
+                        <i class="text-primary fa fa-gg-circle mr-2"></i>
+                        <i class="fa fa-user-circle mr-2"></i>Public
+                        <i class="fa fa-pencil ml-3 mr-2"></i>1 Attempt
+                        <i class="fa fa-clock-o ml-3 mr-2"></i>60 minutes
+                        <i class="fa fa-calendar ml-3 mr-2"></i>Apr 28, 2022
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-3 text-right">
+                      <label class="switch mr-2" title="Toggle Accept Response">
+                        <input type="checkbox" class="action" checked>
+                        <span class="slider round"></span>
+                      </label>
+                      <button class="preview_form" title="Preview Form"><i class="mdi mdi-eye view"></i></button>
+                      <button type="button" class="preview_form" data-toggle="dropdown"><i class="fa fa-align-right"></i></button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item"><i class="fa fa-file-excel-o mr-3 text-success"></i>Export CSV</a>
+                          <a class="dropdown-item"><i class="fa fa-clipboard mr-3 text-warning"></i>Welcome Message</a>
+                        </div>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="card-body">
-                <button class="btn btn-primary btn-sm"><i class="fa fa-pencil-square-o mr-2"></i>Create Questions</button>
+                <h5 style="color: #6c5ce7;">Responses <span class="badge badge-success">1 results</span></h5>
+                <table id="example" class="table table-hover" style="width:100%; cursor: pointer; vertical-align: middle;">
+                  <thead>
+                    <tr>
+                      <th width="90px;"></th>
+                      <th width="10px;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+
+                      </td>
+                      <td class="text-right">
+
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
               </div>
             </div>
-          <!-- <footer class="footer">
-            <div class="d-sm-flex justify-content-center justify-content-sm-between">
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
-              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Free <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap dashboard templates</a> from Bootstrapdash.com</span>
-            </div>
-
-            <div>
-              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"> Distributed By: <a href="https://themewagon.com/" target="_blank">Themewagon</a></span>
-            </div>
-          </footer> -->
-          <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
@@ -140,7 +165,7 @@
           language: { search: '', searchPlaceholder: "Search Here..." },
           "ordering":false,
           "info": false,
-          "lengthChange": false 
+          "bFilter": false
         });
       });
     </script>
