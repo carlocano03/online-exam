@@ -120,8 +120,8 @@
               </div>
               <div class="card-body">
                 <h5 style="color: #6c5ce7;">Responses <span class="badge badge-success">1 results</span></h5>
-                <table id="example" class="table table-hover" style="width:100%; cursor: pointer; vertical-align: middle;">
-                  <thead>
+                <table id="example" class="table" style="width:100%; vertical-align: middle;">
+                  <thead style="display:none;">
                     <tr>
                       <th width="90px;"></th>
                       <th width="10px;"></th>
@@ -130,13 +130,43 @@
                   <tbody>
                     <tr>
                       <td>
-
+                        <div class="row">
+                          <div class="col-sm-1 text-center mt-1">
+                            <img src="assets/img/icon-user.png" style="width:60px; height:60px;" alt="">
+                          </div>
+                          <div class="col-sm-11 text-secondary">
+                            <i class="fa fa-envelope mr-2"></i>sample_email@gmail.com<br><br>
+                            <i class="fa fa-check-circle text-success mr-2"></i>Completed 55 mins 12 secs<br><br>
+                            <a href=""><i class="fa fa-eye mr-2"></i>View Response</a><br>
+                          </div>
+                        </div>
                       </td>
-                      <td class="text-right">
-
+                      <td class="text-right text-secondary">
+                        <span>Attended 1 day ago</span><br><br>
+                        <i class="fa fa-user-circle mr-2"></i>Public
+                        <i class="fa fa-clock-o ml-3 mr-2"></i>60 minutes
                       </td>
                     </tr>
 
+                    <tr>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-1 text-center mt-1">
+                            <img src="assets/img/icon-user.png" style="width:60px; height:60px;" alt="">
+                          </div>
+                          <div class="col-sm-11 text-secondary">
+                            <i class="fa fa-envelope mr-2"></i>sample_email@gmail.com<br><br>
+                            <i class="fa fa-check-circle text-success mr-2"></i>Completed 55 mins 12 secs<br><br>
+                            <a href=""><i class="fa fa-eye mr-2"></i>View Response</a><br>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="text-right text-secondary">
+                        <span>Attended 1 day ago</span><br><br>
+                        <i class="fa fa-user-circle mr-2"></i>Public
+                        <i class="fa fa-clock-o ml-3 mr-2"></i>60 minutes
+                      </td>
+                    </tr>
                   </tbody>
                 </table>
               </div>
@@ -165,7 +195,8 @@
           language: { search: '', searchPlaceholder: "Search Here..." },
           "ordering":false,
           "info": false,
-          "bFilter": false
+          "bFilter": false,
+          "lengthChange": false 
         });
       });
     </script>

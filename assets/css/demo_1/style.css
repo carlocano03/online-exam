@@ -188,6 +188,17 @@ input:checked + .slider:before {
   border-radius: 100px;
 }
 
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  /* > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  } */
+}
+
 @-webkit-keyframes flash {
   0% {
     opacity: 1; }
